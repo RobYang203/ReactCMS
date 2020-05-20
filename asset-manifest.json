@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/ReactCMS/static/css/main.4e0d1d3b.chunk.css",
-    "main.js": "/ReactCMS/static/js/main.ed2d82e6.chunk.js",
-    "main.js.map": "/ReactCMS/static/js/main.ed2d82e6.chunk.js.map",
+    "main.js": "/ReactCMS/static/js/main.77eec474.chunk.js",
+    "main.js.map": "/ReactCMS/static/js/main.77eec474.chunk.js.map",
     "runtime-main.js": "/ReactCMS/static/js/runtime-main.4a7e2e44.js",
     "runtime-main.js.map": "/ReactCMS/static/js/runtime-main.4a7e2e44.js.map",
     "static/css/2.af3c1da9.chunk.css": "/ReactCMS/static/css/2.af3c1da9.chunk.css",
     "static/js/2.fa6b98d2.chunk.js": "/ReactCMS/static/js/2.fa6b98d2.chunk.js",
     "static/js/2.fa6b98d2.chunk.js.map": "/ReactCMS/static/js/2.fa6b98d2.chunk.js.map",
     "index.html": "/ReactCMS/index.html",
-    "precache-manifest.e4e5a475320ce9d621a50e2aed9db1e2.js": "/ReactCMS/precache-manifest.e4e5a475320ce9d621a50e2aed9db1e2.js",
+    "precache-manifest.3dd140000246d852eb2adb11b4b5926d.js": "/ReactCMS/precache-manifest.3dd140000246d852eb2adb11b4b5926d.js",
     "service-worker.js": "/ReactCMS/service-worker.js",
     "static/css/2.af3c1da9.chunk.css.map": "/ReactCMS/static/css/2.af3c1da9.chunk.css.map",
     "static/css/main.4e0d1d3b.chunk.css.map": "/ReactCMS/static/css/main.4e0d1d3b.chunk.css.map",
@@ -21,6 +21,6 @@
     "static/css/2.af3c1da9.chunk.css",
     "static/js/2.fa6b98d2.chunk.js",
     "static/css/main.4e0d1d3b.chunk.css",
-    "static/js/main.ed2d82e6.chunk.js"
+    "static/js/main.77eec474.chunk.js"
   ]
 }

@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fc64e895553f4666870624a850282ed4",
+    "revision": "dfc9a8a71b369d41fd79949bb808b13d",
     "url": "/ReactCMS/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactCMS/static/css/2.af3c1da9.chunk.css"
   },
   {
-    "revision": "fe2351f206537f155adb",
+    "revision": "4bcf475655dca74577f7",
     "url": "/ReactCMS/static/css/main.4e0d1d3b.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/ReactCMS/static/js/2.fa6b98d2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "fe2351f206537f155adb",
-    "url": "/ReactCMS/static/js/main.ed2d82e6.chunk.js"
+    "revision": "4bcf475655dca74577f7",
+    "url": "/ReactCMS/static/js/main.77eec474.chunk.js"
   },
   {
     "revision": "a6daddc3f6ebb7e2bfe6",
