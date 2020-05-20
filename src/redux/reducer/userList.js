@@ -10,6 +10,11 @@ export default function(state=initalState , action){
 
     switch(type){
         case GET_USER_LIST:
+            const {userList} = action.payload;
+            return {
+                ...state,
+                userList:userList
+            }
             break;
         default:
             return state;

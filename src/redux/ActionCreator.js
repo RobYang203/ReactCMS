@@ -1,4 +1,4 @@
-import {REGISTER_USER , USER_LOGIN , CHECK_LOGIN , CLEAN_DATA,REGISTER_CLEAN} from './ActionType'
+import {REGISTER_USER , USER_LOGIN , CHECK_LOGIN , CLEAN_DATA,REGISTER_CLEAN ,GET_LOGININFO,RECOVERY_LOGIN,USER_LOGOUT,GET_USER_LIST} from './ActionType'
 
 export const userLogin  = (userInfo , loginCode)=>{
     
@@ -9,6 +9,11 @@ export const userLogin  = (userInfo , loginCode)=>{
             loginCode:loginCode
         }
     };
+}
+export const userLogout = ()=>{
+    return {
+        type:USER_LOGOUT
+    }
 }
 export const cleanData =()=>{
     return {
@@ -23,7 +28,15 @@ export const checkLogin = (isLogined)=>{
         }
     };
 };
-
+export const recoveryLogin =(userInfo , isRecovry)=>{
+    return {
+        type:RECOVERY_LOGIN,
+        payload:{
+            userInfo:userInfo,
+            isLogined:isRecovry
+        }
+    }
+}
 
 export const registerUser = (registerCode , errCode)=>{
     return {
@@ -40,3 +53,19 @@ export const registerClean = ()=>{
         type:REGISTER_CLEAN
     }
 }
+
+export const getLoginInfo =()=>{
+    return {
+        type:GET_LOGININFO
+    }
+}
+
+export const getUserList =(userList)=>{
+    return{
+        type:GET_USER_LIST,
+        payload:{
+            userList:userList
+        }
+    }
+}
+

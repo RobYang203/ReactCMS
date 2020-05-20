@@ -36,18 +36,27 @@ export const loginToWeb = (account , password)=>{
                 setLoginInfo(u[0]);
             }
 
-            resolve([u ,loginCode]);
-        },100)
+            resolve([u[0] ,loginCode]);
+        },100);
     })
 
 }
-
-export const checkLogined = ()=>{
-    const d = getLoginInfo();
-    return new Promise((resolve,reject)=>{
-        resolve(d !== null);
+export const logoutToWeb = ()=>{
+    return new Promise((resolve , reject)=>{
+        setTimeout(()=>{
+            setLoginInfo({});
+            resolve();
+        },100);
     });
 }
+export const checkLogined = ()=>{
+    const d = getAllSession();
+    return new Promise((resolve,reject)=>{
+        const isLogin = Object.keys(d.loginInfo).length !== 0;
+        resolve(isLogin);
+    });
+}
+
 export const registerAccount = (name ,account , password , password2)=>{
     return new Promise((resolve , reject)=>{
         const u = getUserInfo(account);
@@ -74,9 +83,13 @@ export const registerAccount = (name ,account , password , password2)=>{
 
 }
 
-const getLoginInfo = ()=>{
+export const getLoginInfo = ()=>{
     const d = getAllSession();
-    return d.loginInfo;
+    return new Promise((resolve)=>{
+        setTimeout(()=>{
+            resolve(d.loginInfo);
+        },100);        
+    }) ;
 }
 const setLoginInfo = (userInfo)=>{
     const all = getAllSession();

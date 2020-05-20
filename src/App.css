@@ -40,3 +40,20 @@
   height: 100vh;
   vertical-align: middle;
 }
+
+.meunItem{
+  padding: 8px;
+}
+.meunItem > a {
+  color:#797979;
+}
+.content-border{
+  padding: 0 5px;
+}
+.article-content{
+  background-color: #fff;
+  width: 100%;
+  height: 100%;
+  padding:10px
+}
+
