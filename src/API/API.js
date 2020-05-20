@@ -91,6 +91,19 @@ export const getLoginInfo = ()=>{
         },100);        
     }) ;
 }
+
+export const getfilterUserList = (key)=>{
+    const list = getUserList().filter((item)=>{
+        const {name,account} = item;
+        return name.indexOf(key) !== -1 || account.indexOf(key) !== -1 || key === "";
+    })
+    return new Promise((resolve)=>{
+        setTimeout(()=>{
+            resolve(list);
+        })
+    });
+    
+}
 const setLoginInfo = (userInfo)=>{
     const all = getAllSession();
     const newSession = {
@@ -107,7 +120,8 @@ const setUserInfo = (name , account , password)=>{
         id: userList.length,
         name :name,
         account:account,
-        password:password
+        password:password,
+        createDate:new Date()
     });
     setUserList(userList);
 }
