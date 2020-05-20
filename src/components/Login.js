@@ -7,7 +7,6 @@ import {LOGIN_SUCCESS , ACCOUNT_ERR, PWD_ERR ,DATA_EMPTY} from '../API/APIType'
 import {loginToWeb} from '../API/API'
 
 import {userLogin ,cleanData} from '../redux/ActionCreator'
-import {useHistory} from 'react-router'
 import { Link } from 'react-router-dom';
 class Login extends React.Component{
     constructor(props){
@@ -64,7 +63,8 @@ class Login extends React.Component{
         )
     }
     componentDidUpdate(prevProps, prevState, snapshot){
-        const {errMsg , isLogined} = prevProps;
+        const {errMsg , isLogined} = this.props;
+    
         if(errMsg === "" && isLogined){
             this.props.history.push('/mainFrame');
         }

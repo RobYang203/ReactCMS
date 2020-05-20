@@ -1,4 +1,4 @@
-import {REGISTER_USER , USER_LOGIN , CHECK_LOGIN , CLEAN_DATA} from './ActionType'
+import {REGISTER_USER , USER_LOGIN , CHECK_LOGIN , CLEAN_DATA,REGISTER_CLEAN} from './ActionType'
 
 export const userLogin  = (userInfo , loginCode)=>{
     
@@ -23,3 +23,20 @@ export const checkLogin = (isLogined)=>{
         }
     };
 };
+
+
+export const registerUser = (registerCode , errCode)=>{
+    return {
+        type:REGISTER_USER,
+        payload:{
+            registerCode:registerCode,
+            errCode:errCode
+        }
+    }
+}
+
+export const registerClean = ()=>{
+    return {
+        type:REGISTER_CLEAN
+    }
+}

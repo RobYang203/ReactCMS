@@ -9,8 +9,6 @@ export default function(state=initalState , action){
     const {type} = action;
 
     switch(type){
-        case REGISTER_USER:
-            break;
         case GET_USER_LIST:
             break;
         default:

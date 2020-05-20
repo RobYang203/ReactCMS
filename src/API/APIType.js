@@ -3,3 +3,6 @@ export const ACCOUNT_ERR = "ACCOUNT_ERR";
 export const PWD_ERR = "PWD_ERR";
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 export const DATA_EMPTY = "DATA_EMPTY";
+export const ACCOUNT_NOTFOUND = "ACCOUNT_NOTFOUND";
+export const ACCOUNT_EXIST = "ACCOUNT_EXIST";
+export const REGISTER_SUCCESS = "REGISTER_SUCCESS";

@@ -16,11 +16,9 @@ export function Alert({isShow , msg , onWindowShow}){
     );
 }
 
-export function Confirm({isShow,msg , onConfirm ,  onWindowShow}){
-    const [show, setShow] = useState(isShow);
-    const showBtnClose = onWindowShow !== undefined;
+export function Confirm({isShow, msg , onConfirm ,  onWindowShow}){
     return(
-        <Modal show={show} centered onHide={()=>{onWindowShow(false)}} backdrop="static" >
+        <Modal show={isShow} centered onHide={()=>{onWindowShow(false)}} backdrop="static" >
             <Modal.Header closeButton>
                 Message
             </Modal.Header>
@@ -28,8 +26,7 @@ export function Confirm({isShow,msg , onConfirm ,  onWindowShow}){
                 {msg}
             </Modal.Body>
             <Modal.Footer>
-                <Button variant="outline-primary" onClick={()=>{ onWindowShow(false); onConfirm()}}>Cancel</Button>
-                <Button variant="outline-secondary" onClick={()=>{ onWindowShow(false);}}>Cancel</Button>     
+                <Button variant="outline-primary" onClick={()=>{ onConfirm()}}>Confirm</Button>   
             </Modal.Footer>     
         </Modal>
     );
