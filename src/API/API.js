@@ -8,7 +8,7 @@ export const initSession =()=>{
 
     const session = {
         userList : [],
-        loginInfo : null
+        loginInfo : {}
     }
 
     setAllSession(session);

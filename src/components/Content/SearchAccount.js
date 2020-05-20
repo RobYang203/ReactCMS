@@ -14,7 +14,7 @@ function SearchAccount({userList,getUserList}) {
                     <td>{item.id}</td>
                     <td>{item.account}</td>
                     <td>{item.name}</td>
-                    <td>{item.createDate}</td>
+                    <td>{new Date(item.createDate).toDateString()}</td>
                 </tr>
             retList.push(tmp);
 
